@@ -4,3 +4,5 @@ cp ./.zshrc  ~/.zshrc
 cp ./.zsh_aliases  ~/.zsh_aliases 
 touch ~/.histfile
 cp ./stoys.omp.json ~/stoys.omp.json
+
+chsh -s /bin/zsh
