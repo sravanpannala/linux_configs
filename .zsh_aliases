@@ -1,0 +1,2 @@
+alias s-p="sudo systemctl poweroff"
+alias s-r="sudo systemctl reboot"
