@@ -13,6 +13,11 @@ alias pacview="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bi
 alias um-vpn="/opt/cisco/anyconnect/bin/vpn connect umvpn.umnet.umich.edu/umvpn-split-tunnel-alt"
 alias um-vpn-dis="/opt/cisco/anyconnect/bin/vpn disconnect"
 
+# Git
+alias git-a="git add ."
+alias git-c="git commit -m"
+alias git-p="git push origin"
+
 ## Useful aliases
 alias grubup="sudo update-grub"
 alias fixpacman="sudo rm /var/lib/pacman/db.lck"
