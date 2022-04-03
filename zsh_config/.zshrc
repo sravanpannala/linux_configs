@@ -32,7 +32,7 @@ source /usr/share/fzf/completion.zsh
 # Advanced command-not-found hook
 [[ -e /usr/share/doc/find-the-command/ftc.zsh ]] && source /usr/share/doc/find-the-command/ftc.zsh
 
-
+source ~/.zsh_aliases
 ## Options section
 setopt correct                                                  # Auto correct mistakes
 setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
@@ -47,6 +47,7 @@ setopt autocd                                                   # if only direct
 setopt auto_pushd
 setopt pushd_ignore_dups
 setopt pushdminus
+# setopt completealiases
 
 # Completion.
 autoload -Uz compinit
@@ -78,12 +79,14 @@ SAVEHIST=50000
 bindkey -e
 
 # [PageUp] - Up a line of history
+# up-line-or-history
 if [[ -n "${terminfo[kpp]}" ]]; then
   bindkey -M emacs "${terminfo[kpp]}" up-line-or-history
   bindkey -M viins "${terminfo[kpp]}" up-line-or-history
   bindkey -M vicmd "${terminfo[kpp]}" up-line-or-history
 fi
 # [PageDown] - Down a line of history
+# down-line-or-history
 if [[ -n "${terminfo[knp]}" ]]; then
   bindkey -M emacs "${terminfo[knp]}" down-line-or-history
   bindkey -M viins "${terminfo[knp]}" down-line-or-history
@@ -92,21 +95,21 @@ fi
 
 # Start typing + [Up-Arrow] - fuzzy find history forward
 if [[ -n "${terminfo[kcuu1]}" ]]; then
-  autoload -U up-line-or-beginning-search
-  zle -N up-line-or-beginning-search
+  # autoload -U up-line-or-beginning-search
+  # zle -N up-line-or-beginning-search
 
-  bindkey -M emacs "${terminfo[kcuu1]}" up-line-or-beginning-search
-  bindkey -M viins "${terminfo[kcuu1]}" up-line-or-beginning-search
-  bindkey -M vicmd "${terminfo[kcuu1]}" up-line-or-beginning-search
+  bindkey -M emacs "${terminfo[kcuu1]}" history-substring-search-up
+  bindkey -M viins "${terminfo[kcuu1]}" history-substring-search-up
+  bindkey -M vicmd "${terminfo[kcuu1]}" history-substring-search-up
 fi
 # Start typing + [Down-Arrow] - fuzzy find history backward
 if [[ -n "${terminfo[kcud1]}" ]]; then
   autoload -U down-line-or-beginning-search
   zle -N down-line-or-beginning-search
 
-  bindkey -M emacs "${terminfo[kcud1]}" down-line-or-beginning-search
-  bindkey -M viins "${terminfo[kcud1]}" down-line-or-beginning-search
-  bindkey -M vicmd "${terminfo[kcud1]}" down-line-or-beginning-search
+  bindkey -M emacs "${terminfo[kcud1]}" history-substring-search-down
+  bindkey -M viins "${terminfo[kcud1]}" history-substring-search-down
+  bindkey -M vicmd "${terminfo[kcud1]}" history-substring-search-down
 fi
 
 # [Home] - Go to beginning of line
@@ -189,7 +192,6 @@ if [[ -n "${key[Alt-Right]}" ]]; then
 	bindkey -M vicmd "${key[Alt-Right]}" forward-word
 fi
 
-source ~/.zsh_aliases
 
 ## Run neofetch
 # fastfetch
