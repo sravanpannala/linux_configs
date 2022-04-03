@@ -1,9 +1,16 @@
 # My Aliases
-alias s-p="sudo systemctl poweroff"
-alias s-r="sudo systemctl reboot"
+alias ss-p="sudo systemctl poweroff"
+alias ss-r="sudo systemctl reboot"
+alias ss-en="sudo systemctl enable"     
+alias ss-start="sudo systemctl start"     
+alias ss-stop="sudo systemctl stop"     
+alias jc-v="journalctl --vacuum-time=4weeks"
+alias ss="sudo systemctl"     
+alias jc="journalctl"
 
-alias drop-caches-yay='sudo paccache -rk3; yay -Sc --aur --noconfirm'
-alias drop-caches-paru='sudo paccache -rk3; paru -Sc --aur --noconfirm'
+
+alias drop-caches-yay= 'sudo paccache -rk3; paccache -ruk0; yay -Sc --aur --noconfirm'
+alias drop-caches-paru='sudo paccache -rk3; paccache -ruk0; paru -Sc --aur --noconfirm'
 
 alias yayrm="yay -Rns" 
 alias rmorph='sudo pacman -Rns $(pacman -Qtdq)'  
