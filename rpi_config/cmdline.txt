@@ -1,1 +1,1 @@
-root=UUID=60c1d585-a973-45ec-a2a6-61fafdd92fad rw rootwait console=serial0,115200 console=tty1 selinux=0 plymouth.enable=0 smsc95xx.turbo_mode=N dwc_otg.lpm_enable=0 kgdboc=serial0,115200 usbhid.mousepoll=8
+root=UUID=60c1d585-a973-45ec-a2a6-61fafdd92fad rw rootwait console=serial0,115200 console=tty1 selinux=0 plymouth.enable=0 smsc95xx.turbo_mode=N dwc_otg.lpm_enable=0 kgdboc=serial0,115200 usbhid.mousepoll=6
