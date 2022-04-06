@@ -6,18 +6,15 @@ ncdu
 fzf
 fd
 bpytop
-smartctl
 iotop
 bat
 ncdu
-tldr 
 duf
 stress
 conky
 plank
 cpupower
 expac
-gdmap 
 baobab
 gparted
 glances
@@ -26,6 +23,6 @@ qt5ct
 syncthing
 dfc
 snapper
-btrfs-assitant-git
+btrfs-assistant-git
 pacseek
 arch-install-scripts
