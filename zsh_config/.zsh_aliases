@@ -8,6 +8,8 @@ alias jc-v="journalctl --vacuum-time=4weeks"
 alias ss="sudo systemctl"     
 alias jc="journalctl"
 
+alias yay-db="yay -Y --gendb"
+alias yay-dev="yay -Syu --devel"
 
 alias drop-caches-yay= 'sudo paccache -rk3; paccache -ruk0; yay -Sc --aur --noconfirm'
 alias drop-caches-paru='sudo paccache -rk3; paccache -ruk0; paru -Sc --aur --noconfirm'
