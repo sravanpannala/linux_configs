@@ -1,4 +1,5 @@
 # My Aliases
+alias vi="nvim"
 alias ss-p="sudo systemctl poweroff"
 alias ss-r="sudo systemctl reboot"
 alias ss-en="sudo systemctl enable"     
@@ -10,11 +11,11 @@ alias jc="journalctl"
 
 alias yay-db="yay -Y --gendb"
 alias yay-dev="yay -Syu --devel"
+alias yayrm="yay -Rns" 
 
 alias drop-caches-yay= 'sudo paccache -rk3; paccache -ruk0; yay -Sc --aur --noconfirm'
 alias drop-caches-paru='sudo paccache -rk3; paccache -ruk0; paru -Sc --aur --noconfirm'
 
-alias yayrm="yay -Rns" 
 alias rmorph='sudo pacman -Rns $(pacman -Qtdq)'  
 alias pacsize="expac -H M '%m\t%n' | sort -h"
 alias pacview="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"

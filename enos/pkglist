@@ -1,4 +1,6 @@
 micro
+neovim
+xclip
 neofetch
 barrier
 exa
@@ -17,7 +19,6 @@ cpupower
 expac
 baobab
 gparted
-glances
 kvantum-qt5
 qt5ct
 syncthing
