@@ -27,7 +27,7 @@ alias um-vpn-dis="/opt/cisco/anyconnect/bin/vpn disconnect"
 # Git
 alias git-a="git add ."
 alias git-c="git commit -m"
-alias git-p="git push origin"
+alias git-p="git push"
 
 ## Useful aliases
 alias grubup="sudo update-grub"
