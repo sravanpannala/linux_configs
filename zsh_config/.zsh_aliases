@@ -1,5 +1,6 @@
 # My Aliases
 alias vi="nvim"
+alias ls='ls --color=auto'
 alias ss-p="sudo systemctl poweroff"
 alias ss-r="sudo systemctl reboot"
 alias ss-en="sudo systemctl enable"     
