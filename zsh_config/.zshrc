@@ -9,7 +9,8 @@ fi
     # echo -ne "\033]0; $USER@$HOST:${PWD/$HOME/~} \007"
 # }
 # precmd_functions+=(set_win_title)
-eval "$(oh-my-posh --init --shell zsh --config ~/stoys.omp.json)"
+# eval "$(oh-my-posh --init --shell zsh --config ~/stoys.omp.json)"
+eval "$(starship init zsh)"
 
 ## Plugins section: Enable fish style features
 # Use syntax highlighting
