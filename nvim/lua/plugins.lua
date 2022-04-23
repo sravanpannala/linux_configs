@@ -29,7 +29,29 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use "lambdalisue/suda.vim" -- Sudo for NVIM
+
+  use 'nvim-treesitter/nvim-treesitter'
+  use 'sheerun/vim-polyglot'
+  -- these are optional themes but I hear good things about gloombuddy ;)
+  -- colorbuddy allows us to run the gloombuddy theme
+  use 'tjdevries/colorbuddy.nvim'
+  use 'bkegley/gloombuddy'
+  -- sneaking some formatting in here too
+  use {'prettier/vim-prettier', run = 'yarn install' }
+  -- LSP plugins
+  use 'neovim/nvim-lspconfig'
+  use 'nvim-lua/completion-nvim'
+  use 'anott03/nvim-lspinstall'
+  -- Fuzzy finding
+  use 'nvim-lua/telescope.nvim'
+  use 'jremmen/vim-ripgrep'
+  -- Commenting
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

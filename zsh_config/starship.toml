@@ -39,8 +39,8 @@ add_newline = false
 command_timeout = 1000
 
 [character]
-success_symbol = "[](bold green) "
-error_symbol = "[](bold red) "
+success_symbol = "[➜](bold green) "
+error_symbol = "[✗](bold red) "
 
 [cmd_duration]
 style = 'fg:#48D1CC'
@@ -105,7 +105,7 @@ format = '\[[$symbol($version)]($style)\]'
 [shell]
 fish_indicator = ""
 powershell_indicator = "_"
-zsh_indicator = ""
+zsh_indicator = ""
 unknown_indicator = "mystery shell"
 style = "cyan bold"
 disabled = false

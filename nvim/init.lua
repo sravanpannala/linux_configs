@@ -1,4 +1,5 @@
-require "options"
-require "keymaps"
 require "plugins"
--- require "comment"
+require "options"
+require "treesitter"
+require "lsp"
+require "mappings"
