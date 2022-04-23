@@ -1,4 +1,4 @@
-yay -S zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting zsh-completions starship ttf-nerd-fonts-symbols-mono fzf find-the-command-git --needed
+yay -S zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting zsh-completions starship ttf-nerd-fonts-symbols fzf find-the-command-git --needed
 #yay -S zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting zsh-completions ttf-nerd-fonts-symbols-mono oh-my-posh-git fzf find-the-command-git --needed
 
 ln -s -f $(pwd)/.zshrc  ~/ 
