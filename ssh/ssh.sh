@@ -27,3 +27,6 @@ sudo sed -i "s|$old|$new|g" /etc/ssh/sshd_config
 
 mkdir ~/.ssh
 cp authorized_keys ~/.ssh/
+
+git config --global user.name "sravanpannala"
+git config --global user.email "57152030+sravanpannala@users.noreply.github.com"
