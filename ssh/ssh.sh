@@ -23,4 +23,7 @@ sudo sed -i "s|$old|$new|g" /etc/ssh/sshd_config
 old="#X11DisplayOffset 10"
 new="X11DisplayOffset 10"
 
-sudo sed -i "s|$old|$new|g" ~/etc/ssh/sshd_config
+sudo sed -i "s|$old|$new|g" /etc/ssh/sshd_config
+
+mkdir ~/.ssh
+cp authorized_keys ~/.ssh/

@@ -1,1 +1,1 @@
-yay -S --needed - < pkglist 
+yay -S --needed - < pkglist
