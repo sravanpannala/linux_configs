@@ -30,3 +30,5 @@ cp authorized_keys ~/.ssh/
 
 git config --global user.name "sravanpannala"
 git config --global user.email "57152030+sravanpannala@users.noreply.github.com"
+
+ssh-keygen -t ed25519 -C "57152030+sravanpannala@users.noreply.github.com"
