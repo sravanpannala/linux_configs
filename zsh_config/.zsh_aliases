@@ -1,6 +1,7 @@
 # My Aliases
 alias vi="nvim"
 alias ls='ls --color=auto'
+alias lsm='ls -l --block-size=M'
 alias ss-p="sudo systemctl poweroff"
 alias ss-r="sudo systemctl reboot"
 alias ss-en="sudo systemctl enable"     
@@ -28,6 +29,8 @@ alias um-vpn-dis="/opt/cisco/anyconnect/bin/vpn disconnect"
 alias git-a="git add ."
 alias git-c="git commit -m"
 alias git-p="git push"
+alias git-ch="git checkout"
+alias git-m="git merge"
 
 ## Useful aliases
 alias grubup="sudo update-grub"
