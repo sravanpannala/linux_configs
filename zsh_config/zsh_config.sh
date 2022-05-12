@@ -5,6 +5,6 @@ ln -s -f $(pwd)/.zshrc  ~/
 ln -s -f $(pwd)/.zsh_aliases  ~/ 
 touch ~/.histfile
 ln -s -f $(pwd)/starship.toml ~/.config/
-#,ln -s -f $(pwd)/stoys.omp.json ~/
+#ln -s -f $(pwd)/stoys.omp.json ~/
 
 chsh -s /bin/zsh

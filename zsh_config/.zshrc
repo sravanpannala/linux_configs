@@ -194,7 +194,4 @@ if [[ -n "${key[Alt-Right]}" ]]; then
 	bindkey -M vicmd "${key[Alt-Right]}" forward-word
 fi
 
-
-## Run neofetch
-# fastfetch
 # _byobu_sourced=1 . /usr/bin/byobu-launch 2>/dev/null || true

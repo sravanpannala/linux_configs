@@ -1,5 +1,0 @@
-[all]
-gpu_mem=256
-over_voltage=5
-arm_freq=2000
-gpu_freq=750
